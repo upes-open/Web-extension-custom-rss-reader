@@ -19,4 +19,10 @@
     }
 ​//we were getting a  cors error so we are using the proxy server
 let xml = readXml("https://cors-anywhere.herokuapp.com/https://archiveofourown.org/tags/38408767/feed.atom");
-console.log(xml);
+//printing all the titles in the xml
+var entry = xml.getElementsByTagName("entry");
+for ( i = 0; i < entry.length; i++){
+    
+console.log(entry[i].getElementsByTagName("title")[0].firstChild.data);
+
+}
