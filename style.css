@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Comic Neue', cursive; */
     text-decoration: none;
     list-style: none;
     margin-top: 0px;
@@ -37,7 +37,7 @@
     font-weight: 100;
     font-size: 20px;
     font-family: "Times New Roman" Times,serif;
-    /* font-weight: bold; */
+    font-weight: bold;
     padding: 0px 20px;
     background-color: #000000;
 }
@@ -110,14 +110,15 @@ body{
 .List-item{
     padding-top: 10px;
     border-radius: 5px;
-    /* border: 1px solid#ccc; */
     transition: all 0.3s ease;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .List-item:hover{
     transition: all 0.5s ease;
     transform: scale(0.9);
+    cursor: pointer;
 }
 .Rss{
     color: rgb(43, 233, 14);
@@ -136,6 +137,7 @@ li.list-item.two{
 }
 a.list-item-link.two{
     text-transform: lowercase;
+    cursor: pointer;
 }
 .container-fluid{
     padding-left: 0px;
